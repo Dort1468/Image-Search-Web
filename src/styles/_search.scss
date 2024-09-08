@@ -8,9 +8,22 @@
   button {
     font-size: 2rem;
     padding: 0.25rem;
-    border: 3px solid rgb(186, 252, 181);
+    border: 3px solid black;
+    border-radius: 5px;
   }
   button {
-    background-color: rgb(186, 252, 181);
+    background-color: rgba(121, 250, 239, 0.63);
+    margin: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(121, 250, 239, 0.367);
+    }
+
+    &:active {
+      background-color: rgba(121, 250, 239, 0.367);
+      box-shadow: 0 3px #666;
+      transform: translateY(2px);
+    }
   }
 }

@@ -7,6 +7,20 @@
   .picture {
     padding: 1rem;
     width: 400px;
+
+    p {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .author {
+      font-weight: 600;
+    }
+
+    a {
+      color: rgb(71, 71, 160);
+      text-decoration: underline;
+    }
     .imageContainer {
       overflow: hidden;
       height: 40vh;

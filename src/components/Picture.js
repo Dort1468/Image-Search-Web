@@ -3,12 +3,12 @@ import React from "react";
 const Picture = ({ data }) => {
   return (
     <div className="picture">
-      <p>{data.photographer}</p>
+      <p className="author">Photogragher: {data.photographer}</p>
       <div className="imageContainer">
         <img src={data.src.large} alt="" />
       </div>
       <p>
-        下載圖片:{" "}
+        放大圖片:{" "}
         <a target="_blank" href={data.src.large}>
           Press Here
         </a>

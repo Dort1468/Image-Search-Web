@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  background-color: rgb(228, 255, 226);
+  background-color: $background;
   min-height: 10vh;
+  border-top: 5px solid black;
 }

@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: beige;
 }
 
 a {
@@ -27,12 +28,42 @@ ul {
   padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
   border: none;
-  background-color: rgb(186, 252, 181);
+  background-color: rgba(121, 250, 239, 0.63);
+  border: 3px solid black;
+  border-radius: 5px;
   cursor: pointer;
+}
+.morePicture button:active {
+  background-color: rgba(121, 250, 239, 0.367);
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+.morePicture button:hover {
+  background-color: rgba(121, 250, 239, 0.367);
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  margin: 48px;
+  background-color: lightgray;
+}
+.about-page h3 {
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(68, 38, 38);
+}
+.about-page h2 {
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+.about-page li {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 nav {
-  background-color: rgb(228, 255, 226);
+  background-color: rgba(121, 250, 239, 0.63);
 }
 nav ul {
   display: flex;
@@ -44,6 +75,7 @@ nav ul li {
 }
 nav ul li a {
   font-size: 1.25rem;
+  font-weight: bolder;
 }
 
 .search {
@@ -56,10 +88,22 @@ nav ul li a {
 .search button {
   font-size: 2rem;
   padding: 0.25rem;
-  border: 3px solid rgb(186, 252, 181);
+  border: 3px solid black;
+  border-radius: 5px;
 }
 .search button {
-  background-color: rgb(186, 252, 181);
+  background-color: rgba(121, 250, 239, 0.63);
+  margin: 5px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+.search button:hover {
+  background-color: rgba(121, 250, 239, 0.367);
+}
+.search button:active {
+  background-color: rgba(121, 250, 239, 0.367);
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
 }
 
 .footer {
@@ -67,8 +111,9 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  background-color: rgb(228, 255, 226);
+  background-color: rgba(121, 250, 239, 0.63);
   min-height: 10vh;
+  border-top: 5px solid black;
 }
 
 .pictures {
@@ -80,6 +125,17 @@ nav ul li a {
 .pictures .picture {
   padding: 1rem;
   width: 400px;
+}
+.pictures .picture p {
+  text-align: center;
+  padding: 5px;
+}
+.pictures .picture .author {
+  font-weight: 600;
+}
+.pictures .picture a {
+  color: rgb(71, 71, 160);
+  text-decoration: underline;
 }
 .pictures .picture .imageContainer {
   overflow: hidden;
